@@ -1,6 +1,6 @@
 package myapi.policy
 
-import data.myapi.acl
+import data.sonar.gate
 import input
 
 default allow = false
