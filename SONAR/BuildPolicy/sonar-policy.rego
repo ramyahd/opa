@@ -1,4 +1,4 @@
-package myapi.policy
+package sonar.policy
 
 import data.sonar.gate
 import input
