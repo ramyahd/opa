@@ -20,7 +20,7 @@ is_qualtiygate(qualitygate)
 
 is_qualityimage(qualitygate)
 {
-        qulalitygate[_] != qualitygate
+        qualitygate[_] != qualitygate
 }
 
 
