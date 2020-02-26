@@ -6,7 +6,7 @@ import input
 default allow = false
 allow {
         gate = gate[input.user]
-        gate == input.gate
+        quality-gate == input.gate
 }
 
 
