@@ -9,8 +9,5 @@ allow {
         gate1 == input.gate
 }
 
-gate {
-		gate = gate[input.user.quality-gate]
-}
 
 
