@@ -6,8 +6,8 @@ import input
 default allow = false
 default gate = 50
 allow {
-        access = acl[input.user]
-        access[_] == input.access
+        gate = acl[input.user]
+        gate1 == input.gate
 }
 gate {
 		gate = gate[input.user.quality-gate]
