@@ -8,27 +8,22 @@ allow_quality_gate[explanation]
 {
         user := gate[input.user]
         qualitygate := user[_].qualitygate
-        is_qualtiygate(qualitygate)
-        explanation:= "qualtiy metric not reached"
+        is_qualitygate(qualitygate)
+        explanation:= "quality metric not reached"
    
 }
 
 
-is_qualtiygate(qualitygate)
+      is_qualitygate(qualitygate)
 {
         [_, quality_tag] := split(qualitygate, ":")
-        qualitytag == qualitygate[_]
+        quality_tag == qualitygate[_]
 }
 
 
 
-is_qualityimage(qualitygate)
+      is_qualitygate(qualitygate)
 {
       not contains(qualitygate, ":")
 }
-
-
-
-
-
 
