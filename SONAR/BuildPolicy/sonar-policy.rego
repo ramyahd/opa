@@ -6,7 +6,7 @@ import input
 
 allow_quality_gate[explanation]
 {
-        qualitygate := gate[input.user.qulalitygate]
+        qualitygate := gate[input.user.qualitygate]
         is_qualtiygate(qualitygate)
         explanation:= "qualtiy metric not reached"
    
