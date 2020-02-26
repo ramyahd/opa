@@ -4,7 +4,6 @@ import data.sonar.gate
 import input
 
 default allow = false
-default gate= 50
 allow {
         gate1 = gate[input.user]
         gate1 == input.gate
