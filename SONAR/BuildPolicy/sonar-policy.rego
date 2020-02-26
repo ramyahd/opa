@@ -5,8 +5,8 @@ import input
 
 default allow = false
 allow {
-        gate = gate[input.user]
-        qualitygate[_] == input.gate
+        qualitygate = gate[input.user]
+        qualitygate[_] == input.qualitygate
 }
 
 
