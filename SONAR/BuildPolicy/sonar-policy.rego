@@ -1,11 +1,18 @@
 package myapi.policy
 
-import data.sonar.acl
+import data.myapi.acl
 import input
 
-default allow = false
-allow {
+
+default gate = 50
+deny[reason]{
         access = acl[input.user]
-        access1 := input.access
-        access[_] == access1
+        access[_] == input.access
+        value := input.access 
+       	not allows(value)
+        reason := "gate limit not reached" 
+}
+
+allows(value) {
+		gate == value
 }
