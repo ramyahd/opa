@@ -1,12 +1,8 @@
 {
-	"vaishnavi": [{
-
-		"qualitygate": "70"
-	}],
-
-	"user2": [{
-
-		"qualitygate": "60"
-
-	}]
+"vaishnavi":{
+"quality-gate":"70"
+},
+"user1":{
+"quality-gate":"50"
+}
 }
