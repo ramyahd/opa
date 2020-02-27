@@ -1,11 +1,11 @@
 package myapi.policy
 
-import data.sonar.gate
+import data.sonar.acl
 import input
 
 default allow = false
 allow {
-        access = gate[input.user]
+        access = acl[input.user]
         access1 := input.access
         access[_] == access1
 }
