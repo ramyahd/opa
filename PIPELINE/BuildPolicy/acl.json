@@ -1,0 +1,15 @@
+{
+	"servers": [{
+			"id": "alice",
+			"branch": ["feature", "master"]
+		},
+		{
+			"id": "bob",
+			"branch": ["feature", "master"]
+		},
+		{
+			"id": "mark",
+			"branch": ["feature"]
+		}
+	]
+}
