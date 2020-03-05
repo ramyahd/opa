@@ -9,7 +9,7 @@ default allow=false
 
 allow
 {
-    access := acl[servers[_].id]
+    access := acl[input.servers[_].id[_]]
     server := input.servers[_]
     access[_] == server.id
    # server.branch[_] ==acl[input.server[_].id]
