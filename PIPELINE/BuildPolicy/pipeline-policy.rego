@@ -1,8 +1,13 @@
-package servers
+package pipeline.policy
+
+
+import data.pipeline.acl
 import input
-foo[input.servers[i].metrics] 
+
+
+result[acl[input.servers[i].metrics]] 
 {
-    input.servers[i].branch_name == "feature"
-    input.servers[i].name == "Alice"
+    acl[input.servers[i].branch_name] == "input.servers[i].branch_name"
+    acl[input.servers[i].name] == "input.servers[i].name"
     
 }
