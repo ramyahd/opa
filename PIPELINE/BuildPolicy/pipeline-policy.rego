@@ -1,13 +1,13 @@
-package play
+package myapi.policy
 
 
-import data.metrics
+import data.myapi.acl
 import input
 
 
-result[data.servers[i].metrics] 
+result[acl[data.servers[i].metrics]] 
 {
-   data.servers[i].branch_name == input.servers.branch_name
-   data.servers[i].name == input.servers.name
+   acl[data.servers[i].branch_name] == input.servers.branch_name
+   acl[data.servers[i].name] == input.servers.name
     
 }
