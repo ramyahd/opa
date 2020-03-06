@@ -1,26 +1,8 @@
-package myapi.policy
-
-import data.myapi.acl
+package servers
 import input
-
-default allow=false
-
-
-
-allow
+foo[input.servers[i].metrics] 
 {
-    access := acl[input.servers[_].id[_]]
-    server := input.servers[_]
-    access[_] == server.id
-   # server.branch[_] ==acl[input.server[_].id]
+    input.servers[i].branch_name == "feature"
+    input.servers[i].name == "Alice"
+    
 }
-
-
-#allow
-#{
-#	server := input.servers[_]
- #   server.id == "alice"
-  #  server.branch[_] =="feature"
-#}
-
-
