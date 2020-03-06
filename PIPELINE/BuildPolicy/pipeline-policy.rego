@@ -7,6 +7,6 @@ import input
 
 result[acl[input.servers[i].metrics]] 
 {
-  acl[servers[i].branch_name] == input.servers.branch_name
-  acl[servers[i].name] == input.servers.name
+  acl[input.servers[i].branch_name] == input.servers.branch_name
+  acl[input.servers[i].name] == input.servers.name
 }
