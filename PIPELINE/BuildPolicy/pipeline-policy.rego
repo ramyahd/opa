@@ -5,9 +5,9 @@ import data.myapi.acl
 import input
 
 
-result[acl[data.servers[i].metrics]] 
+result[acl[input.servers[i].metrics]] 
 {
-   acl[data.servers[i].branch_name] == input.servers.branch_name
-   acl[data.servers[i].name] == input.servers.name
+   acl[input.servers[i].branch_name] == input.servers.branch_name
+   acl[input.servers[i].name] == input.servers.name
     
 }
