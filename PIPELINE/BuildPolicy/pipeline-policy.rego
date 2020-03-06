@@ -5,7 +5,7 @@ import data.myapi.acl
 import input
 
 
-result[acl[input.servers[i].metrics]] 
+result[input.servers[i].metrics] 
 {
    access = acl[input.servers]
    access[].branch_name == input.servers.branch_name
