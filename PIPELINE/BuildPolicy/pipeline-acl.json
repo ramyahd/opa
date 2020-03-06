@@ -7,7 +7,7 @@
                     "code-coverage": "50"
                 }
             ],
-            "id": "Alice"
+            "name": "Alice"
         },
         {
             "branch_name": "feature",
