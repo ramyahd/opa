@@ -5,7 +5,7 @@ import data.myapi.acl
 import input
 
 
-result[acl[input.servers.metrics]] 
+result[acl[input.servers[i].metrics]] 
 {
   "Alice" == input.servers.branch_name
   "master" == input.servers.name 
