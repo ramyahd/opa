@@ -11,7 +11,7 @@ import input
   #
   #}
 
-foo[result.server[i].metrics]
+foo[server[i].metrics]
 {
  # s := servers[_]
  # a := s[i].branch_name
@@ -20,6 +20,6 @@ foo[result.server[i].metrics]
   #servers[_] = input.servers.name
  # a == input.servers.branch_name
  # b == input.servers.name
-  result.servers[i].branch_name == input.servers.branch_name
-  result.servers[i].name == input.servers.name 
+  servers[i].branch_name == input.servers.branch_name
+  servers[i].name == input.servers.name 
 }
