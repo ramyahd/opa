@@ -6,7 +6,7 @@ import input
 
 
 
-result[servers[i].metrics]
+result[s[i].metrics]
 {
   s = servers[_]
   a := s[i].branch_name
