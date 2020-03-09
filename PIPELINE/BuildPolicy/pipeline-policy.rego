@@ -7,7 +7,7 @@ import input
 
 result[s[_]]
 {
-  s := acl[data.servers]
+  s := result.servers
   
   }
 
