@@ -1,14 +1,14 @@
 package myapi.policy
 
 
-import data.myapi.acl.servers
+import data.myapi.acl
 import input
 
 
-result[r]
+result[r[_]]
 {
-  s := servers[_]
-  r := s.branch_name[_]
+  s := acl[input.servers]
+  r[_] := s
   }
 
 #result[s[i].metrics]
