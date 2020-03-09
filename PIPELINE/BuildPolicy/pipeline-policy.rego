@@ -1,16 +1,16 @@
 package myapi.policy
 
 
-import data.myapi.acl
+import pipeline-acl.servers
 import input
 
 
 
-result[input.servers.branch_name]
+result[servers[i].metrics]
 {
-  servers = acl[input.servers]
-  servers[_] = input.servers.branch_name
-  servers[_] = input.servers.name
-  #acl[data.servers[i].branch_name] == input.servers.branch_name
-  #acl[data.servers[i].name] == input.servers.name 
+  #servers = acl[input.servers]
+  #servers[_] = input.servers.branch_name
+  #servers[_] = input.servers.name
+  servers[i].branch_name == input.servers.branch_name
+  servers[i].name == input.servers.name 
 }
