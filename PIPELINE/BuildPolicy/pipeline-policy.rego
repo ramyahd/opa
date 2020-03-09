@@ -5,7 +5,7 @@ import data.myapi.acl
 import input
 
 
-result[s]
+result[s[_]]
 {
   s := acl[input.servers]
   
