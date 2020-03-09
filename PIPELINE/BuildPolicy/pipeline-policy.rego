@@ -1,7 +1,7 @@
 package myapi1.policy
 
 
-import data.myapi1.acl.servers
+import data.myapi1.acl
 import input
 
 
@@ -11,7 +11,7 @@ import input
   #
   #}
 
-result[servers[i].metrics]
+result[s]
 {
  # s := servers[_]
  # a := s[i].branch_name
@@ -22,4 +22,5 @@ result[servers[i].metrics]
  # b == input.servers.name
   servers[i].branch_name == input.servers.branch_name
   servers[i].name == input.servers.name 
+  s := servers[i].metrics
 }
