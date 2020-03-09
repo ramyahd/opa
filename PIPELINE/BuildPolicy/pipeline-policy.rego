@@ -20,7 +20,7 @@ result[s]
   #servers[_] = input.servers.name
  # a == input.servers.branch_name
  # b == input.servers.name
-  acl[servers[i].branch_name] == input.servers.branch_name
-  acl[servers[i].name] == input.servers.name 
-  s := acl[servers[i].metrics]
+  acl[input.servers[i].branch_name] == input.servers.branch_name
+  acl[input.servers[i].name] == input.servers.name 
+  s := acl[input.servers[i].metrics]
 }
