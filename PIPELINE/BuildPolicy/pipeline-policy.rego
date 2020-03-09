@@ -1,7 +1,7 @@
 package myapi.policy
 
 
-import data.myapi.servers.acl
+import data.myapi.acl
 import input
 
 
