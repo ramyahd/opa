@@ -5,14 +5,14 @@ import data.myapi1.acl
 import input
 
 
-result[s[_]]
-{
-  s := result.servers
-  
-  }
-
-#result[s[i].metrics]
+#result[s[_]]
 #{
+ # s := result.servers
+  #
+  #}
+
+result[result.server[i].metrics]
+{
  # s := servers[_]
  # a := s[i].branch_name
  # b := s[i].name
@@ -20,6 +20,6 @@ result[s[_]]
   #servers[_] = input.servers.name
  # a == input.servers.branch_name
  # b == input.servers.name
-  #servers[i].branch_name == input.servers.branch_name
-  #servers[i].name == input.servers.name 
+  result.servers[i].branch_name == input.servers.branch_name
+  result.servers[i].name == input.servers.name 
 #}
