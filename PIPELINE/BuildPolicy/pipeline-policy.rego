@@ -6,7 +6,7 @@ import input
 
 
 
-result[acl[input.servers[_]]]
+result[acl[data.servers[i].name]]
 {
  
   acl[data.servers[i].branch_name] == input.servers.branch_name
