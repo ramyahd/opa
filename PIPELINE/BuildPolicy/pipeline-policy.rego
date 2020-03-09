@@ -4,8 +4,9 @@ package myapi.policy
 import data.myapi.acl
 import input
 
+r[] := acl[input.servers[i].metrics
 
-result[acl[input.servers[_].metrics]] 
+result[r[]] 
 {
  
   acl[input.servers[i].branch_name] == input.servers.branch_name
