@@ -6,7 +6,7 @@ import input
 
 default allow =false
 
-result[acl[input.servers[i].metrics]] 
+result[acl[input.servers[_].metrics]] 
 {
  
   acl[input.servers[i].branch_name] == input.servers.branch_name
