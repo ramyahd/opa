@@ -5,10 +5,10 @@ import data.myapi.acl
 import input
 
 
-result[r[_]]
+result[s]
 {
   s := acl[input.servers]
-  r[_] := s
+  
   }
 
 #result[s[i].metrics]
