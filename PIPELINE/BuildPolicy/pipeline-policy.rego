@@ -11,7 +11,7 @@ import input
   #
   #}
 
-result[result.server[i].metrics]
+foo[result.server[i].metrics]
 {
  # s := servers[_]
  # a := s[i].branch_name
