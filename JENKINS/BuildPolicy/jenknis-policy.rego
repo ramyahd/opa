@@ -10,7 +10,7 @@ allow {
         access[_] == input.access
 }
 
-#whocan[user] {
- #       access = acl[user]
-  #      access[_] == input.access
-#}
+whocan[user] {
+        access = acl[user]
+        access[_] == input.access
+}
