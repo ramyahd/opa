@@ -11,7 +11,7 @@ import input
   #
   #}
 
-result[acl[input.servers]]
+result[input.servers]
 {
   #s := servers[_]
   #s[i].branch_name == input.servers.branch_name
@@ -22,7 +22,9 @@ result[acl[input.servers]]
   #servers[_] = input.servers.name
  # a == input.servers.branch_name
  # b == input.servers.name
-  acl[input.servers[i].branch_name] == input.servers.branch_name
-  acl[input.servers[i].name] == input.servers.name 
+   server = acl[servers]
+   server[_] = in[ut.servers.branch_name
+  #acl[input.servers[i].branch_name] == input.servers.branch_name
+  #acl[input.servers[i].name] == input.servers.name 
   #s := acl[input.servers[i].metrics]
 }
