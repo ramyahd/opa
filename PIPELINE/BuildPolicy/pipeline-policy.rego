@@ -11,13 +11,13 @@ import input
   #
   #}
   
-foo[name2] {
+foo[metrics[_]] {
     name2 = acl[input.name]
     name2 == input.name
     
     #name1 = acl[input.branch_name]
     #name1[_] == input.branch_name
-    #metrics = acl[input.branch_name.metrics]
+    metrics = acl[input.branch_name.metrics]
     }
   
   
