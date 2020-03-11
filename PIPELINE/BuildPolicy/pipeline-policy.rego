@@ -2,7 +2,7 @@ package myapi1.policy
 
 
 #import data.myapi1.acl
-import servers
+import input
 
 
 #result[s[_]]
@@ -13,9 +13,9 @@ import servers
   
   
   
-foo[servers[i].metrics] {
-    servers[i].branch_name == "feature"
-    servers[i].name == "Alice"
+foo[input.servers[i].metrics] {
+    input.servers[i].branch_name == "feature"
+    input.servers[i].name == "Alice"
     
     }
 
