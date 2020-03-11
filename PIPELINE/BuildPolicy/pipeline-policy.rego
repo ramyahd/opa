@@ -11,8 +11,9 @@ import input
   #
   #}
   
-foo[name1] {
-    input.name = acl[input.name]
+foo[name2] {
+    name2 := acl[input.name]
+    name2 == input.name
     name1 = acl[input.branch_name]
     name1[_] == input.branch_name
     }
