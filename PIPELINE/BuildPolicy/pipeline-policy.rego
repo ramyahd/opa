@@ -1,7 +1,7 @@
 package myapi1.policy
 
 
-import data.myapi1.acl
+#import data.myapi1.acl
 import input
 
 
@@ -10,9 +10,17 @@ import input
  # s := result.servers
   #
   #}
+  
+  
+  
+foo[input.committer[i].metrics] {
+    input.committer[i].branch_name == "feature"
+    input.committer[i].name == "Alice"
+    
+    }
 
-result[input.servers.branch_name]
-{
+#result[input.servers.branch_name]
+#{
   #s := servers[_]
   #s[i].branch_name == input.servers.branch_name
   #s[i].name == input.servers.name
@@ -24,9 +32,9 @@ result[input.servers.branch_name]
  # b == input.servers.name
    #server := input.servers[_]
    #server.branch_name = input.servers.branch_name
-   input.servers.branch_name == acl[input.servers[i].branch_name]
-   input.servers.name == acl[input.servers[i].name]
+  # input.servers.branch_name == acl[input.servers[i].branch_name]
+   #input.servers.name == acl[input.servers[i].name]
   #acl.servers[i].branch_name == input.servers.branch_name
   #acl.servers[i].name == input.servers.name 
   #s := acl[input.servers[i].metrics]
-}
+#}
