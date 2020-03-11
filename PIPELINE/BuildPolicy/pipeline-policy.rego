@@ -2,7 +2,7 @@ package myapi1.policy
 
 
 #import data.myapi1.acl
-import input.servers
+import input
 
 
 #result[s[_]]
