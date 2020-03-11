@@ -1,6 +1,6 @@
-package myapi.policy
+package jen.policy
 
-import data.myapi.acl
+import data.jen.acl
 import input
 
 default allow = false
