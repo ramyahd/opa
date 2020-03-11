@@ -11,7 +11,7 @@ import input
   #
   #}
   
-foo[metrics] {
+foo[name2] {
     name2 = acl[input.name]
     name2 == input.name
     name1 = acl[input.branch_name]
