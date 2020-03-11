@@ -13,9 +13,9 @@ import input
   
   
   
-foo[input.servers[i].metrics] {
-    input.servers[i].branch_name == "feature"
-    input.servers[i].name == "Alice"
+foo[servers[i].metrics] {
+    servers[i].branch_name == "feature"
+    servers[i].name == "Alice"
     
     }
 
