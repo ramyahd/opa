@@ -1,4 +1,4 @@
-package myapi1.policy
+package jenkinss.policy
 
 
 #import data.myapi1.acl
