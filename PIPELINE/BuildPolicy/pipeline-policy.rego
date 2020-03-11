@@ -11,7 +11,7 @@ import input
   #
   #}
 
-result[acl[input.servers]
+result[acl[input.servers]]
 {
   #s := servers[_]
   #s[i].branch_name == input.servers.branch_name
