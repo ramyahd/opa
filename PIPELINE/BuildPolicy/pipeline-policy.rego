@@ -14,8 +14,8 @@ import input
   
   
 foo[acl[input.servers[i].metrics]] {
-    acl[input.servers[i].branch_name] == "feature"
-    acl[input.servers[i].name] == "Alice"
+    acl[input.servers[i].branch_name] == input.branch_name
+    acl[input.servers[i].name] == input.name
     
     }
 
