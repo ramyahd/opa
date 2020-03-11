@@ -13,9 +13,9 @@ import input
   
   
   
-foo[input.committer[i].metrics] {
-    input.committer[i].branch_name == "feature"
-    input.committer[i].name == "Alice"
+foo[input.servers[i].metrics] {
+    input.servers[i].branch_name == "feature"
+    input.servers[i].name == "Alice"
     
     }
 
