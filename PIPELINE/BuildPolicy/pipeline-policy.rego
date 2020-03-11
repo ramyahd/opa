@@ -1,7 +1,7 @@
 package jenkinss.policy
 
 
-import data.myapi1.acl
+import data.jenkinss.acl
 import input
 
 
@@ -11,13 +11,17 @@ import input
   #
   #}
   
-  
-  
-foo[acl[input.servers[i].metrics]] {
-    acl[input.servers[i].branch_name] == input.branch_name
-    acl[input.servers[i].name] == input.name
-    
+foo[name] {
+    name = acl[input.name]
+    name[_] == input.branch_name
     }
+  
+  
+#foo[acl[input.servers[i].metrics]] {
+ #   acl[input.servers[i].branch_name] == input.branch_name
+  #  acl[input.servers[i].name] == input.name
+    
+   # }
 
 #result[input.servers.branch_name]
 #{
