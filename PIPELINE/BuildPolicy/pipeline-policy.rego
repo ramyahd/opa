@@ -27,13 +27,15 @@ import input
     
    # }
 
-foo[name]
+foo[msg]
 {
   name = acl[input.name]
   branch_name = acl[input.branch_name]
   #metrics = acl[metrics]
   name == input.name
   branch_name == input.branch_name
+  
+  msg := "metrics not reached"
   }
   
   #s := servers[_]
