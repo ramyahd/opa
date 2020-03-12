@@ -11,10 +11,10 @@ import input
   #
   #}
   
-#foo[metrics[_]] {
- #   name2 = acl[input.name]
-  #  name2 == input.name
-    
+foo[metrics] {
+    name2 = acl[input.branch_name]
+    name2 == input.name
+    }
     #name1 = acl[input.branch_name]
     #name1[_] == input.branch_name
    # metrics = acl[input.branch_name.metrics]
@@ -27,16 +27,16 @@ import input
     
    # }
 
-foo[msg]
-{
-  name = acl[input.name]
-  branch_name = acl[input.branch_name]
+#foo[msg]
+#{
+ # name = acl[input.name]
+  #branch_name = acl[input.branch_name]
   #metrics = acl[metrics]
-  name == input.name
-  branch_name == input.branch_name
+  #name == input.name
+  #branch_name == input.branch_name
   
-  msg := "metrics not reached"
-  }
+  #msg := "metrics not reached"
+  #}
   
   #s := servers[_]
   #s[i].branch_name == input.servers.branch_name
