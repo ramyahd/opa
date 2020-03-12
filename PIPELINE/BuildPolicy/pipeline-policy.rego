@@ -11,21 +11,21 @@ import input
   #
   #}
   
-foo[metrics] {
-    name2 = acl[input.branch_name]
-    name2 == input.name
-    }
+#foo[metrics] {
+ #   name2 = acl[input.branch_name]
+  #  name2 == input.name
+   # }
     #name1 = acl[input.branch_name]
     #name1[_] == input.branch_name
    # metrics = acl[input.branch_name.metrics]
     #}
   
   
-#foo[acl[input.servers[i].metrics]] {
- #   acl[input.servers[i].branch_name] == input.branch_name
-  #  acl[input.servers[i].name] == input.name
+  foo[acl[input[i].metrics]] {
+    acl[input[i].branch_name] == input.branch_name
+    acl[input[i].name] == input.name
     
-   # }
+    }
 
 #foo[msg]
 #{
