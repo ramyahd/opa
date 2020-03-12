@@ -5,10 +5,9 @@ import data.jenkinss.acl
 import input
 
 
-#result[s[_]]
-#{
- # s := result.servers
-  #
+foo[s[_]]
+{
+    
   #}
   
 #foo[metrics] {
