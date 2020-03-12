@@ -11,14 +11,14 @@ import input
   #
   #}
   
-foo[metrics[_]] {
-    name2 = acl[input.name]
-    name2 == input.name
+#foo[metrics[_]] {
+ #   name2 = acl[input.name]
+  #  name2 == input.name
     
     #name1 = acl[input.branch_name]
     #name1[_] == input.branch_name
-    metrics = acl[input.branch_name.metrics]
-    }
+   # metrics = acl[input.branch_name.metrics]
+    #}
   
   
 #foo[acl[input.servers[i].metrics]] {
@@ -27,8 +27,15 @@ foo[metrics[_]] {
     
    # }
 
-#result[input.servers.branch_name]
-#{
+foo[name]
+{
+  name = acl[input.name]
+  branch_name = acl[input.branch_name]
+  #metrics = acl[metrics]
+  name == input.name
+  branch_name == input.branch_name
+  }
+  
   #s := servers[_]
   #s[i].branch_name == input.servers.branch_name
   #s[i].name == input.servers.name
